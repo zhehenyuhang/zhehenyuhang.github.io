@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>HTML介绍篇（一） | 这很宇航个人站</title>
+  <title>&lt;head&gt;标记 | 这很宇航个人站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="[TOC] &lt;head&gt;标记12345678910&lt;!doctype html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;        &lt;title&gt;无标题文档&lt;&#x2F;title&gt;    &lt;&#x2F;head&gt;        &lt;body&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HTML介绍篇（一）">
+<meta property="og:title" content="&lt;head&gt;标记">
 <meta property="og:url" content="http://example.com/2021/05/12/html/head%E6%A0%87%E8%AE%B0/index.html">
 <meta property="og:site_name" content="这很宇航个人站">
 <meta property="og:description" content="[TOC] &lt;head&gt;标记12345678910&lt;!doctype html&gt;&lt;html&gt;    &lt;head&gt;        &lt;meta charset&#x3D;&quot;utf-8&quot;&gt;        &lt;title&gt;无标题文档&lt;&#x2F;title&gt;    &lt;&#x2F;head&gt;        &lt;body&amp;">
@@ -19,7 +19,7 @@
 <meta property="og:image" content="c:/Users/shiyuhang/AppData/Roaming/Typora/typora-user-images/image-20210512210554901.png">
 <meta property="og:image" content="c:/Users/shiyuhang/AppData/Roaming/Typora/typora-user-images/image-20210512211131434.png">
 <meta property="article:published_time" content="2021-05-12T04:58:45.000Z">
-<meta property="article:modified_time" content="2021-05-23T09:12:32.039Z">
+<meta property="article:modified_time" content="2021-05-23T09:20:43.026Z">
 <meta property="article:author" content="zhehenyuhang">
 <meta property="article:tag" content="html">
 <meta name="twitter:card" content="summary">
@@ -158,7 +158,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      HTML介绍篇（一）
+      &lt;head&gt;标记
     </h1>
   
 
@@ -175,6 +175,8 @@
 <h1 id="lt-head-gt-标记"><a href="#lt-head-gt-标记" class="headerlink" title="&lt;head&gt;标记"></a>&lt;head&gt;标记</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>初始自带源代码构成了HTML5文档的基本格式，主要包括&lt;!doctype&gt;文档类型声明，&lt;html&gt;跟标记，**&lt;head&gt;头部标记**，&lt;body&gt;主体标记。</p>
+<span id="more"></span>
+
 <h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p>&lt;head&gt;标记用于定义HTML文档的头部信息，也称作<strong>头部标记</strong>，紧跟在&lt;html&gt;标记之后，主要用来<strong>封装其他位于文档头部</strong>的标记(这个是以后的重点T.T)，<strong>它是所有头部元素的容器</strong>。文档的头部描述了<em>文档的各种属性和信息，包括文档的标题，在 Web 中的位置以及和其他文档的关系，其他文件信息等。</em>绝大多数文档头部包含的数据都不会真正作为内容显示给读者。</p>
 <h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p><strong>注意：</strong>请记住始终为文档规定标题！</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -245,14 +247,14 @@
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          HTML介绍篇（一）
+          &lt;body&gt;标记
         
       </div>
     </a>
   
   
     <a href="/2021/05/11/html/html%E6%A0%87%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">HTML介绍篇（一）</div>
+      <div class="article-nav-title">&lt;html&gt;标记</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -382,11 +384,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">idea</a>
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -398,7 +396,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">idea</a>
               </li>
             
             <div class="clearfix"></div>

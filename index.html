@@ -144,6 +144,677 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-html/标记的属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/23/html/%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B1%9E%E6%80%A7/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/23/html/%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B1%9E%E6%80%A7/" class="archive-article-date">
+  	<time datetime="2021-05-23T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="标记的属性"><a href="#标记的属性" class="headerlink" title="标记的属性"></a>标记的属性</h1><p>HTML有许多的标记，它们代表了不同的内容，但还是不能包含所有，所以引入了属性。让HTML标记提供出，显示出更多的内容。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;标记名 属性=&quot;属性值&quot; 属性=&quot;属性值&quot;&gt;&lt;/标记名&gt;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>标记可以拥有多个属性。</li>
+<li>属性写在开始标记中。</li>
+<li>属性与属性之间由空格隔开。</li>
+<li>属性都有默认值，不给属性值默认为默认值。</li>
+</ol>
+<h2 id="例子1"><a href="#例子1" class="headerlink" title="例子1"></a>例子1</h2><h3 id="代码1："><a href="#代码1：" class="headerlink" title="代码1："></a>代码1：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>秃头代码<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">h2</span> <span class="attr">align</span>=<span class="string">&quot;center&quot;</span>&gt;</span>关注秃头代码<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--h2为第二标题，字数大小小于第一标题--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--align属性为控制文字位置，conter为控制标题在中间--&gt;</span></span><br><span class="line">    </span><br><span class="line">	<span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--hr分割线--&gt;</span></span><br><span class="line">    </span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">&quot;left&quot;</span>&gt;</span>关注秃头代码<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--p为段落--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--align属性为控制文字位置，left为控制标题在左边--&gt;</span></span><br><span class="line">    </span><br><span class="line">	<span class="tag">&lt;<span class="name">hr</span> <span class="attr">size</span>=<span class="string">&quot;10&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--hr分割线 size属性决定了分割线的大小（宽度）--&gt;</span></span><br><span class="line">    </span><br><span class="line">	<span class="tag">&lt;<span class="name">h1</span> <span class="attr">align</span>=<span class="string">&quot;right&quot;</span>&gt;</span>关注秃头代码<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--h1为第一标题--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--align属性为控制文字位置，right控制标题在右边--&gt;</span></span><br><span class="line">    </span><br><span class="line">	<span class="tag">&lt;<span class="name">hr</span> <span class="attr">size</span>=<span class="string">&quot;20&quot;</span> <span class="attr">color</span>=<span class="string">&quot;#FF0004&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--hr分割线--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--size属性决定了分割线的大小（宽度）--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--color属性为控制分割线颜色--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="代码1图样："><a href="#代码1图样：" class="headerlink" title="代码1图样："></a>代码1图样：</h3><p><img src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210523164612334.png" alt="image-20210523164612334"></p>
+<p>对于标记，想控制标记的什么属性就可以设置什么属性，并且属性可以进行嵌套。</p>
+<h2 id="例子2"><a href="#例子2" class="headerlink" title="例子2"></a>例子2</h2><h3 id="代码2："><a href="#代码2：" class="headerlink" title="代码2："></a>代码2：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">em</span>&gt;</span>关注<span class="tag">&lt;/<span class="name">em</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span>&gt;</span>秃头<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    代码</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--两个代码并不完全相同--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">em</span>&gt;</span>关注<span class="tag">&lt;/<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>秃头<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>代码<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;<span class="name">em</span>&gt;</span>关注<span class="tag">&lt;/<span class="name">em</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span><span class="tag">&lt;<span class="name">em</span>&gt;</span>秃<span class="tag">&lt;/<span class="name">em</span>&gt;</span>头<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>代码<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="代码2图样："><a href="#代码2图样：" class="headerlink" title="代码2图样："></a>代码2图样：</h3><p><img src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210523170005485.png" alt="image-20210523170005485"></p>
+<blockquote>
+<p>&lt;p&gt;标签为段落，&lt;strong&gt;标签为粗体，&lt;em&gt;标签为斜体。</p>
+</blockquote>
+<p>&lt;p&gt;标签里嵌套了&lt;em&gt;标签和&lt;strong&gt;标签，也可以在&lt;p&gt;标签中嵌套&lt;strong&gt;，并在&lt;strong&gt;中继续嵌套&lt;em&gt;。</p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>第一个有空格间隙，第二个没有。</li>
+<li>标签开始结束相互对应，不可&lt;strong&gt;&lt;em&gt;内容&lt;/strong&gt;&lt;/em&gt;。</li>
+</ol>
+<hr>
+<p align="right">2021-05-23</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/23/html/%E6%A0%87%E8%AE%B0%E7%9A%84%E5%B1%9E%E6%80%A7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/HTML标记-注释标记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/22/html/HTML%E6%A0%87%E8%AE%B0-%E6%B3%A8%E9%87%8A%E6%A0%87%E8%AE%B0/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/22/html/HTML%E6%A0%87%E8%AE%B0-%E6%B3%A8%E9%87%8A%E6%A0%87%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-05-22T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="HTML标记-注释标记"><a href="#HTML标记-注释标记" class="headerlink" title="HTML标记-注释标记"></a>HTML标记-注释标记</h1><p>在HTML中还有些一种特殊的标记-注释标记，如果在HTML文档中添加一些对HTML代码的解释说明便需要注释标记出场了。它既可以让自己以后看代码时，更容易找回记忆，找回思路，也可以让别人读代码时，更加容易明白代码的意图。</p>
+<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--注释语句--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>例子：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>一段对话<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="comment">&lt;!--一个简单地段落语句--&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210522194145948.png" alt="image-20210522194145948"></p>
+<p>此语句没有显示在网页中，只是在代码中有显示说明作用。</p>
+<hr>
+<p align="right">2021-05-22</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/22/html/HTML%E6%A0%87%E8%AE%B0-%E6%B3%A8%E9%87%8A%E6%A0%87%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/HTML5语法概要" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/19/html/HTML5%E8%AF%AD%E6%B3%95%E6%A6%82%E8%A6%81/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/19/html/HTML5%E8%AF%AD%E6%B3%95%E6%A6%82%E8%A6%81/" class="archive-article-date">
+  	<time datetime="2021-05-19T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="HTML5语法概要"><a href="#HTML5语法概要" class="headerlink" title="HTML5语法概要"></a>HTML5语法概要</h1><p><em>为了兼容各个浏览器，HTML5采用宽松的语法格式。</em></p>
+<h2 id="1-标签不区分大小写"><a href="#1-标签不区分大小写" class="headerlink" title="1.标签不区分大小写"></a>1.标签不区分大小写</h2><p>标签可以不区分大小写，例如：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>这里的第一个p是小写，第二个P是大写。<span class="tag">&lt;/<span class="name">P</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>但最好都是小写或是大写，但不建议大写。</p>
+<h2 id="2-允许属性值不使用引号"><a href="#2-允许属性值不使用引号" class="headerlink" title="2.允许属性值不使用引号"></a>2.允许属性值不使用引号</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">checked</span>=<span class="string">a</span> <span class="attr">type</span>=<span class="string">checkbox/</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">checked</span>=<span class="string">&quot;a&quot;</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>以上两句代码效果一样也是正确的，<em>但本人不建议这样做。</em></p>
+<h2 id="3-允许部分属性忽略"><a href="#3-允许部分属性忽略" class="headerlink" title="3.允许部分属性忽略"></a>3.允许部分属性忽略</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">checked</span>=<span class="string">&quot;checked&quot;</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">checked</span> <span class="attr">type</span>=<span class="string">&quot;checkbox&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>同上，可以但不建议。</p>
+<p><strong>因为一个项目开发是由许多人员共同完成的，不利于他人的阅读和后期的维护。</strong></p>
+<hr>
+<p align='right'>2021-5-19</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/19/html/HTML5%E8%AF%AD%E6%B3%95%E6%A6%82%E8%A6%81/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/body标记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/18/html/body%E6%A0%87%E8%AE%B0/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/18/html/body%E6%A0%87%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-05-18T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="lt-body-gt-标记"><a href="#lt-body-gt-标记" class="headerlink" title="&lt;body&gt;标记"></a>&lt;body&gt;标记</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>初始自带源代码构成了HTML5文档的基本格式，主要包括&lt;!doctype&gt;文档类型声明，&lt;html&gt;跟标记，&lt;head&gt;头部标记，**&lt;body&gt;主体标记**。</p>
+<h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p>&lt;body&gt;标记<strong>用于定义HTML文档所要显示的内容</strong>，也称为主体标记。浏览器中显示的<em>所有文本，图像，音频和视频</em>等信息都必须位于&lt;body&gt;标记中的信息才是最终显示给用户看的。</p>
+<p>一个HTML文档<strong>只能含有一对&lt;body&gt;标记</strong>，并且&lt;body&gt;标记必须在&lt;html&gt;标记内，位于&lt;head&gt;头部标记之后，<em>与&lt;head&gt;标记是并列关系</em>。</p>
+<p><strong>HTML文档的所有基本信息基本都在&lt;body&gt;标记内。</strong></p>
+<h2 id="HTML-与-XHTML-之间的差异"><a href="#HTML-与-XHTML-之间的差异" class="headerlink" title="HTML 与 XHTML 之间的差异"></a>HTML 与 XHTML 之间的差异</h2><p>在 HTML 4.01 中，所有 body 元素的“呈现属性”均不被赞成使用。</p>
+<p>在 XHTML 1.0 Strict DTD 中，所有 body 元素的“呈现属性”均不被支持。</p>
+<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><table>
+<thead>
+<tr>
+<th align="center">元素</th>
+<th align="center">Chrome</th>
+<th align="center">IE</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Opera</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&lt;body&gt;</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<p>所有主流浏览器都支持 &lt;body&gt; 标签。</p>
+<hr>
+<p align='right'>2021-5-18</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/18/html/body%E6%A0%87%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/head标记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/12/html/head%E6%A0%87%E8%AE%B0/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/12/html/head%E6%A0%87%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-05-12T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="lt-head-gt-标记"><a href="#lt-head-gt-标记" class="headerlink" title="&lt;head&gt;标记"></a>&lt;head&gt;标记</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>初始自带源代码构成了HTML5文档的基本格式，主要包括&lt;!doctype&gt;文档类型声明，&lt;html&gt;跟标记，**&lt;head&gt;头部标记**，&lt;body&gt;主体标记。</p>
+<h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p>&lt;head&gt;标记用于定义HTML文档的头部信息，也称作<strong>头部标记</strong>，紧跟在&lt;html&gt;标记之后，主要用来<strong>封装其他位于文档头部</strong>的标记(这个是以后的重点T.T)，<strong>它是所有头部元素的容器</strong>。文档的头部描述了<em>文档的各种属性和信息，包括文档的标题，在 Web 中的位置以及和其他文档的关系，其他文件信息等。</em>绝大多数文档头部包含的数据都不会真正作为内容显示给读者。</p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p><strong>注意：</strong>请记住始终为文档规定标题！</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img align='left' src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210512210333430.png"><img align= 'left' src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210512210554901.png"></p>
+<p>此处填写的是什么标题就是什么</p>
+<p><em>经典实例：</em></p>
+<p><img src="C:\Users\shiyuhang\AppData\Roaming\Typora\typora-user-images\image-20210512211131434.png" alt="image-20210512211131434"></p>
+<p><strong>注意：</strong>一个HTML文档只能有一对&lt;head&gt;标记。</p>
+<h2 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h2><table>
+<thead>
+<tr>
+<th align="center">元素</th>
+<th align="center">Chrome</th>
+<th align="center">IE</th>
+<th align="center">Firefox</th>
+<th align="center">Safari</th>
+<th align="center">Opera</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&lt;head&gt;</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody></table>
+<p>所有浏览器都支持 &lt;head&gt; 标签。</p>
+<hr>
+<p align='right'>2021-5-12</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/12/html/head%E6%A0%87%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/html标记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/11/html/html%E6%A0%87%E8%AE%B0/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/11/html/html%E6%A0%87%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-05-11T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="lt-html-gt-标记"><a href="#lt-html-gt-标记" class="headerlink" title="&lt;html&gt;标记"></a>&lt;html&gt;标记</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>初始自带源代码构成了HTML5文档的基本格式，主要包括&lt;!doctype&gt;文档类型声明，**&lt;html&gt;跟标记**，&lt;head&gt;头部标记，&lt;body&gt;主体标记。</p>
+<p>**&lt;html&gt;*<em>标记位于&lt;!doctype&gt;标记之后，也称为根标记，用于告知浏览器其自身是一个HTML文档，</em>&lt;html&gt;<em>标记标志着HTML文档的</em>开始<em>，</em>&lt;/html&gt;<em>标记标志着HTML文档的</em>结束*，在它们之间的是文档的头部和主体内容。</p>
+<blockquote>
+<p>通俗了讲： &lt;!doctype&gt;之后就是&lt;html&gt;&lt;/html&gt;标记</p>
+<p>​                    &lt;html&gt;和&lt;/html&gt;标记之间存放代码头部(&lt;head&gt;&lt;/head&gt;)和主体(身体)(&lt;body&gt;&lt;/body&gt;)</p>
+<p>​                    看见&lt;html&gt;就知道代码开始了，看见&lt;/html&gt;代码结束！</p>
+</blockquote>
+<hr>
+<p align='right'>2021-5-11</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/11/html/html%E6%A0%87%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-html/!doctype标记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/09/html/!doctype%E6%A0%87%E8%AE%B0/">HTML介绍篇（一）</a>
+    </h1>
+  
+
+        
+        <a href="/2021/05/09/html/!doctype%E6%A0%87%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2021-05-09T04:58:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="lt-doctype-gt-标记"><a href="#lt-doctype-gt-标记" class="headerlink" title="&lt;!doctype&gt;标记"></a>&lt;!doctype&gt;标记</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">title</span>&gt;</span>无标题文档<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>初始自带源代码构成了HTML5文档的基本格式，主要包括&lt;!doctype&gt;文档类型声明，&lt;html&gt;跟标记，&lt;head&gt;头部标记，&lt;body&gt;主体标记。</p>
+<p><strong>&lt;!doctype&gt;标记</strong>：标记位于文档的<em>最前面</em>，用于想浏览器说明当前文档使用哪种<em>HTML标准规范</em>，HTML5文档中的DOCTYPE声明非常简单，代码如下：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>只有<strong>在开头</strong>使用&lt;!doctype&gt;声明，浏览器才能将该网页作为<em>有效的HTML文档</em>，并按指定的文档类型进行解析。使用HTML5的DOCTYPE声明，会触发浏览器以<em>标准兼容模式</em>来显示页面。</p>
+<hr>
+<p align='right'>2021-5-9</p>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/09/html/!doctype%E6%A0%87%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-html/HTML介绍篇（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -403,470 +1074,10 @@
 
 
   
-    <article id="p-python/python-flask-for" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/python/python-flask-for/">python_flask_for</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/python/python-flask-for/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:29:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>for循环</p>
-<p><img src="https://www.zhehenyuhang.xyz/wp-content/uploads/2021/02/4_V9Z_TJJB69@HKMKGBX5-1.png" alt="img"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/python/python-flask-for/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="p-python/python-02综合知识" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/python/python-02%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/">python_02综合知识</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/python/python-02%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:27:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#条件判断语句</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># if</span></span><br><span class="line"><span class="comment"># 语法:   if 条件表达式 ： 语句</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># if True : print(&#x27;你猜我出来吗？&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># num = 210 </span></span><br><span class="line"><span class="comment"># if num&gt;10 : print(&#x27;num比10大！&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 代码块</span></span><br><span class="line"><span class="comment">#   代码块中保存着一组代码，同一个代码块中的代码，要么都执行要么都不执行</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> <span class="literal">False</span> :</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">123</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">456</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="number">789</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="number">10</span>)</span><br><span class="line">num = <span class="number">18</span></span><br><span class="line"><span class="keyword">if</span> <span class="number">10</span>&lt;num&lt;<span class="number">20</span> :</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;num比10大！比20小！&#x27;</span>)</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2021/03/22/python/python-02%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/python/python-02%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="p-python/python-01综合知识" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/python/python-01%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/">python_01综合知识</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/python/python-01%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:26:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#数值</span></span><br><span class="line"></span><br><span class="line">a=<span class="number">10</span></span><br><span class="line">b=<span class="number">20</span></span><br><span class="line"><span class="comment">#c=999999**10</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"><span class="built_in">print</span>(b)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">c=<span class="number">123_456_789</span></span><br><span class="line"><span class="built_in">print</span>(c)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># d=0123  数字不能 0开头</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#二进制 0b  八进制0o  十六进制 0x</span></span><br><span class="line">d=<span class="number">0b10</span> </span><br><span class="line">d=<span class="number">0o10</span></span><br><span class="line">d=<span class="number">0x10</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#   print(d)   输出是十进制的数字</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">d=<span class="number">100</span></span><br><span class="line">d = d + <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#浮点数 float</span></span><br><span class="line">d=<span class="number">1.23</span></span><br><span class="line">d=<span class="number">0.1</span>+<span class="number">0.2</span>   <span class="comment">#浮点数运算可能会得到一个不精确的结果</span></span><br><span class="line">			<span class="comment">#0.30000000000000004</span></span><br><span class="line"><span class="built_in">print</span>(d)</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2021/03/22/python/python-01%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/python/python-01%E7%BB%BC%E5%90%88%E7%9F%A5%E8%AF%86/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="p-java/java环境变量配置" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/java/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/">java_helloworld</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/java/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:24:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">         System.out.print(<span class="string">&quot;Hello,World!&quot;</span>);</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>Hello.java</p>
-</li>
-<li><p>编译javac java，生成第一个class文件</p>
-</li>
-<li><p>运行class文件 java Hello</p>
-        
-          <a class="article-more-a" href="/2021/03/22/java/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/java/java%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="p-c/c-倒叙数字" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/c/c-%E5%80%92%E5%8F%99%E6%95%B0%E5%AD%97/">c_倒叙数字</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/c/c-%E5%80%92%E5%8F%99%E6%95%B0%E5%AD%97/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:24:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;输入你要输入的数字：\n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">    <span class="keyword">int</span> a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;原本的数字是%d,倒序的数字是&quot;</span>,x);</span><br><span class="line">    <span class="keyword">while</span> (x&gt;<span class="number">0</span>)&#123;</span><br><span class="line">        a=x%<span class="number">10</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a);</span><br><span class="line">        x/=<span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/c/c-%E5%80%92%E5%8F%99%E6%95%B0%E5%AD%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="p-c/c-helloworld" class="article article-type-p  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/22/c/c-helloworld/">c_helloworld</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/22/c/c-helloworld/" class="archive-article-date">
-  	<time datetime="2021-03-22T06:23:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/22/c/c-helloworld/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+    </nav>
   
 
 
@@ -968,19 +1179,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">idea</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">flask</a>
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">flask</a>
               </li>
             
             <div class="clearfix"></div>
